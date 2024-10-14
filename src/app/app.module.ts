@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderNavbarComponent } from './components/header-navbar/header-navbar.component';
 import { PromptComponent } from './components/prompt/prompt.component';
 import { ProductComponent } from './components/product/product.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { ProductComponent } from './components/product/product.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

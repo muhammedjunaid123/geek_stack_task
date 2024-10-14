@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './prompt.component.css'
 })
 export class PromptComponent {
-
+  search = ''
 }
