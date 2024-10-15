@@ -1,12 +1,19 @@
-<div class="flex justify-center items-center">
-    <div class="">
-        <div class="flex justify-between bg-gray-800 w-[60vw] px-8 rounded-full p-5 h-[13vh]">
-            <input class="bg-gray-800 text-white w-[50vw]"  type="text" placeholder="Enter your prompt here" [(ngModel)]="search">
-            <svg (click)="send()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 56 56">
+<div class="flex justify-center items-center p-4 md:p-6 lg:p-8">
+    <div class="grid justify-center w-full">
+        <div class="flex bg-gray-800 w-full max-w-[60vw] px-4 md:px-6 lg:px-8 rounded-full p-4 md:p-5 h-[13vh] items-center">
+            <input class="bg-gray-800 text-white w-full" type="text" placeholder="Enter your prompt here"
+                [(ngModel)]="search">
+            <svg (click)="send()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 56 56"
+                class="cursor-pointer">
                 <path fill="white"
                     d="M36.543 26.852V12.109c0-5.414-3.492-9.187-8.531-9.187s-8.532 3.773-8.532 9.187v14.743c0 5.39 3.493 9.187 8.532 9.187s8.53-3.797 8.53-9.187m-3.54 0c0 3.468-1.991 5.695-4.991 5.695s-4.992-2.227-4.992-5.695V12.109c0-3.468 1.992-5.695 4.992-5.695s4.992 2.227 4.992 5.695ZM17.536 49.539a1.76 1.76 0 0 0-1.758 1.781a1.74 1.74 0 0 0 1.758 1.758h20.953a1.74 1.74 0 0 0 1.758-1.758a1.76 1.76 0 0 0-1.758-1.78H29.77v-5.462c8.953-.75 15-7.172 15-16.383v-4.757a1.74 1.74 0 0 0-1.758-1.758a1.76 1.76 0 0 0-1.782 1.758v4.617c0 7.992-5.203 13.289-13.218 13.289S14.77 35.547 14.77 27.554v-4.616a1.74 1.74 0 0 0-1.758-1.758a1.76 1.76 0 0 0-1.782 1.758v4.757c0 9.211 6.07 15.633 15 16.383v5.461Z" />
             </svg>
         </div>
-        <p>coimbatore<span class="text-yellow-300">.ai</span> may display inaccurate info, so double-check its responses. <span class="underline">Your privacy and Gemini Apps</span> </p>
+        <div>
+            <p class="hidden lg:block md:block text-center text-sm mt-2">
+                coimbatore<span class="text-yellow-300">.ai</span> may display inaccurate info, so double-check its responses.
+                <span class="underline">Your privacy and Gemini Apps</span>
+            </p>
+        </div>
     </div>
 </div>
