@@ -1,8 +1,8 @@
-<div class="flex justify-center items-center p-4 md:p-6 lg:p-8">
+<div class="flex justify-center items-center p-4 md:p-6 lg:p-8 bg-gray-900">
     <div class="grid justify-center w-full">
         <div class="flex bg-gray-800 w-full max-w-[60vw] px-4 md:px-6 lg:px-8 rounded-full p-4 md:p-5 h-[13vh] items-center">
-            <input class="bg-gray-800 text-white w-full" type="text" placeholder="Enter your prompt here"
-                [(ngModel)]="search">
+            <input class="bg-gray-800 text-white placeholder-gray-400 w-full focus:outline-none" 
+                   type="text" placeholder="Enter your prompt here" [(ngModel)]="search">
             <svg (click)="send()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 56 56"
                 class="cursor-pointer">
                 <path fill="white"
@@ -10,7 +10,7 @@
             </svg>
         </div>
         <div>
-            <p class="hidden lg:block md:block text-center text-sm mt-2">
+            <p class="hidden lg:block md:block text-center text-sm mt-2 text-gray-400">
                 coimbatore<span class="text-yellow-300">.ai</span> may display inaccurate info, so double-check its responses.
                 <span class="underline">Your privacy and Gemini Apps</span>
             </p>

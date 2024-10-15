@@ -1,11 +1,15 @@
 @if (data) {
 
-<div class="grid gap-4  justify-center pb-12">
-    <div class="grid justify-start w-[60vw] ">
-        <p class="text-xl">Restaurants near me</p>
+<div class="grid gap-4  justify-center pb-12 bg-gray-900">
+    <div class="grid justify-start w-[60vw] p-2">
+        <p class="text-xl text-white">Restaurants near me</p>
         <div class="gap-4 flex">
-            <div class="rounded-full w-7 h-7 border-2 border-gray-900"></div>
-            <p class="text-xl">Showing the result for your query</p>
+            <div
+                class="rounded-full w-9 h-9 border-2 border-gray-900 dark:border-gray-100 overflow-hidden flex-shrink-0">
+                <img src="../../../assets/unknown.jpg" class="w-full h-full object-cover" alt="">
+            </div>
+
+            <p class="text-xl text-white">Showing the result for your query</p>
         </div>
     </div>
     <div
@@ -289,7 +293,7 @@
 
 }@else {
 
-<div class="grid gap-4  justify-center pb-12">
+<div class="grid gap-4  justify-center pb-12 bg-gray-900">
     <div class="grid justify-start w-[60vw] space-y-4">
         <!-- Skeleton loader for the "Restaurants near me" text -->
         <div class="w-48 h-6 bg-gray-300 rounded animate-pulse"></div>
