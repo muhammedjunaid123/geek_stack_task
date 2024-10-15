@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      screens: {
+        xs: "500px",
+      },
     },
   },
   plugins: [],

@@ -12,7 +12,38 @@ export class HomeComponent {
   products!: any[]
   constructor(private _store: StoreService) { }
 
-  responsiveOptions: any[] | undefined;
+  responsiveOptions = [
+    {
+        breakpoint: '1536px', // 2XL
+        numVisible: 3,        // Show 3 items
+        numScroll: 1          // Scroll 1 item at a time
+    },
+    {
+        breakpoint: '1200px',  // XL
+        numVisible: 3,         // Show 3 items
+        numScroll: 1
+    },
+    {
+        breakpoint: '992px',   // LG
+        numVisible: 3,         // Show 3 items
+        numScroll: 1
+    },
+    {
+        breakpoint: '768px',   // MD
+        numVisible: 2,         // Show 2 items
+        numScroll: 1
+    },
+    {
+        breakpoint: '576px',   // SM
+        numVisible: 1,         // Show 1 item
+        numScroll: 1
+    },
+    {
+        breakpoint: '440px',   // XS
+        numVisible: 1,         // Show 1 item
+        numScroll: 1
+    }
+];
 
 
 
@@ -42,25 +73,6 @@ export class HomeComponent {
       {
         name: 'Show me the top pubs in coimbatore',
 
-      }
-    ];
-
-
-    this.responsiveOptions = [
-      {
-        breakpoint: '1199px',
-        numVisible: 1,
-        numScroll: 1
-      },
-      {
-        breakpoint: '991px',
-        numVisible: 2,
-        numScroll: 1
-      },
-      {
-        breakpoint: '767px',
-        numVisible: 1,
-        numScroll: 1
       }
     ];
   }
