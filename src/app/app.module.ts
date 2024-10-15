@@ -8,7 +8,10 @@ import { HeaderNavbarComponent } from './components/header-navbar/header-navbar.
 import { PromptComponent } from './components/prompt/prompt.component';
 import { ProductComponent } from './components/product/product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
+import { TagModule } from 'primeng/tag';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,9 +22,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    CarouselModule,
+    ButtonModule,
+    TagModule
   ],
   providers: [],
   bootstrap: [AppComponent]
