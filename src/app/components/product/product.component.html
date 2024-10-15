@@ -1,3 +1,5 @@
+@if (data) {
+
 <div class="grid gap-4  justify-center pb-12">
     <div class="grid justify-start w-[60vw] ">
         <p class="text-xl">Restaurants near me</p>
@@ -6,9 +8,11 @@
             <p class="text-xl">Showing the result for your query</p>
         </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
+    <div
+        class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
         <div class="col-span-1">
-            <img src="../../../assets/haribhavanam-hotel-restaurant.jpg" alt="" class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] rounded-lg">
+            <img src="../../../assets/haribhavanam-hotel-restaurant.jpg" alt=""
+                class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] rounded-lg">
         </div>
         <div class="p-3 col-span-2">
             <h1 class="text-xl text-white pb-2">Haribhavanam restauran</h1>
@@ -87,9 +91,11 @@
             </svg>
         </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
+    <div
+        class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
         <div class="col-span-1">
-            <img src="../../../assets/haribhavanam-hotel-restaurant.jpg" alt="" class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] rounded-lg">
+            <img src="../../../assets/haribhavanam-hotel-restaurant.jpg" alt=""
+                class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] rounded-lg">
         </div>
         <div class="p-3 col-span-2">
             <h1 class="text-xl text-white pb-2">Haribhavanam restauran</h1>
@@ -168,10 +174,12 @@
             </svg>
         </div>
     </div>
-   
-    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
+
+    <div
+        class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
         <div class="col-span-1">
-            <img src="../../../assets/haribhavanam-hotel-restaurant.jpg" alt="" class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] rounded-lg">
+            <img src="../../../assets/haribhavanam-hotel-restaurant.jpg" alt=""
+                class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] rounded-lg">
         </div>
         <div class="p-3 col-span-2">
             <h1 class="text-xl text-white pb-2">Haribhavanam restauran</h1>
@@ -278,3 +286,139 @@
         </div>
     </div>
 </div>
+
+}@else {
+
+<div class="grid gap-4  justify-center pb-12">
+    <div class="grid justify-start w-[60vw] space-y-4">
+        <!-- Skeleton loader for the "Restaurants near me" text -->
+        <div class="w-48 h-6 bg-gray-300 rounded animate-pulse"></div>
+
+        <div class="flex items-center gap-4">
+            <!-- Skeleton loader for the circle -->
+            <div class="rounded-full w-7 h-7 bg-gray-300 animate-pulse"></div>
+
+            <!-- Skeleton loader for the paragraph -->
+            <div class="w-64 h-5 bg-gray-300 rounded animate-pulse"></div>
+        </div>
+    </div>
+
+
+
+    <div
+        class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
+        <!-- Image Skeleton -->
+        <div class="col-span-1">
+            <div
+                class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] bg-gray-500 rounded-lg animate-pulse">
+            </div>
+        </div>
+
+        <!-- Text Skeleton -->
+        <div class="p-3 col-span-2">
+            <!-- Title skeleton -->
+            <div class="h-6 bg-gray-500 rounded-md animate-pulse mb-2 w-2/3"></div>
+
+            <!-- Flex rating icons skeleton -->
+            <div class="flex gap-2 mb-4">
+                <div class="bg-gray-500 h-6 w-16 rounded-lg animate-pulse"></div>
+                <div class="bg-gray-500 h-6 w-6 rounded-full animate-pulse"></div>
+                <div class="bg-gray-500 h-6 w-6 rounded-full animate-pulse"></div>
+            </div>
+
+            <!-- Location text skeleton -->
+            <div class="h-4 bg-gray-500 rounded-md animate-pulse w-4/5 mb-3"></div>
+
+            <!-- Tags skeleton -->
+            <div class="flex gap-3 mb-4">
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+            </div>
+
+            <!-- Contact button skeletons -->
+            <div class="flex gap-4">
+                <div class="h-8 w-32 bg-gray-500 rounded-md animate-pulse"></div>
+                <div class="h-8 w-32 bg-gray-500 rounded-md animate-pulse"></div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
+        <!-- Image Skeleton -->
+        <div class="col-span-1">
+            <div
+                class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] bg-gray-500 rounded-lg animate-pulse">
+            </div>
+        </div>
+
+        <!-- Text Skeleton -->
+        <div class="p-3 col-span-2">
+            <!-- Title skeleton -->
+            <div class="h-6 bg-gray-500 rounded-md animate-pulse mb-2 w-2/3"></div>
+
+            <!-- Flex rating icons skeleton -->
+            <div class="flex gap-2 mb-4">
+                <div class="bg-gray-500 h-6 w-16 rounded-lg animate-pulse"></div>
+                <div class="bg-gray-500 h-6 w-6 rounded-full animate-pulse"></div>
+                <div class="bg-gray-500 h-6 w-6 rounded-full animate-pulse"></div>
+            </div>
+
+            <!-- Location text skeleton -->
+            <div class="h-4 bg-gray-500 rounded-md animate-pulse w-4/5 mb-3"></div>
+
+            <!-- Tags skeleton -->
+            <div class="flex gap-3 mb-4">
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+            </div>
+
+            <!-- Contact button skeletons -->
+            <div class="flex gap-4">
+                <div class="h-8 w-32 bg-gray-500 rounded-md animate-pulse"></div>
+                <div class="h-8 w-32 bg-gray-500 rounded-md animate-pulse"></div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 lg:grid-cols-3 bg-gray-700 rounded-lg p-3 relative items-center">
+        <!-- Image Skeleton -->
+        <div class="col-span-1">
+            <div
+                class="w-[85vw] p-2 lg:[15vw] md:w-[20vw] sm:w-[20vw] xs:w-[30vw] h-[33vh] bg-gray-500 rounded-lg animate-pulse">
+            </div>
+        </div>
+
+        <!-- Text Skeleton -->
+        <div class="p-3 col-span-2">
+            <!-- Title skeleton -->
+            <div class="h-6 bg-gray-500 rounded-md animate-pulse mb-2 w-2/3"></div>
+
+            <!-- Flex rating icons skeleton -->
+            <div class="flex gap-2 mb-4">
+                <div class="bg-gray-500 h-6 w-16 rounded-lg animate-pulse"></div>
+                <div class="bg-gray-500 h-6 w-6 rounded-full animate-pulse"></div>
+                <div class="bg-gray-500 h-6 w-6 rounded-full animate-pulse"></div>
+            </div>
+
+            <!-- Location text skeleton -->
+            <div class="h-4 bg-gray-500 rounded-md animate-pulse w-4/5 mb-3"></div>
+
+            <!-- Tags skeleton -->
+            <div class="flex gap-3 mb-4">
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+                <div class="h-6 bg-gray-500 w-20 rounded-md animate-pulse"></div>
+            </div>
+
+            <!-- Contact button skeletons -->
+            <div class="flex gap-4">
+                <div class="h-8 w-32 bg-gray-500 rounded-md animate-pulse"></div>
+                <div class="h-8 w-32 bg-gray-500 rounded-md animate-pulse"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+}
