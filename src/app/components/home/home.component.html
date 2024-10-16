@@ -1,19 +1,19 @@
-<div>
-    <div class="flex justify-center items-center bg-gray-900">
+<div >
+    <div class="flex justify-center items-center bg-neutral-900">
         <div
-            class="w-[100vw] h-[53vh] overflow-x-auto font-light lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-roboto text-white flex justify-end px-20 py-6">
-            <p> Vanakkam, this is <span class="">coimbatore</span><span class="text-yellow-300">.ai</span><br>
+            class="w-[100vw] h-[53vh] overflow-x-auto font-light lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-roboto text-white flex justify-end px-36 py-20">
+            <p class="text-neutral-600 font-opensans"> Vanakkam, this is <span class="text-white font-opensans">coimbatore</span><span class="text-yellow-300 font-opensans">.ai</span><br>
                 How can I help you today?</p>
         </div>
     </div>
-    <div class="pb-6 bg-gray-900">
+    <div class="pb-16 bg-neutral-900">
         <p-carousel [value]="products" [numVisible]="3" [numScroll]="1" autoplayInterval="2000"
             [responsiveOptions]="responsiveOptions">
             <ng-template let-product pTemplate="item">
                 <div
-                    class="bg-gray-800 border-2 border-gray-700 rounded-lg relative w-[70vw] h-[35vh] sm:w-[30vw] sm:h-[40vh] md:w-[25vw] md:h-[40vh] lg:w-[25vw] lg:h-[40vh] mx-2">
+                    class="bg-neutral-800 shadow-xl rounded-lg relative w-[70vw] h-[35vh] sm:w-[30vw] sm:h-[40vh] md:w-[25vw] md:h-[40vh] lg:w-[22vw] lg:h-[50vh] mx-2">
                     <div (click)="toPrompt(product.name)">
-                        <p class="font-extralight text-xl text-white py-10 px-6 text-center">{{product.name}}</p>
+                        <p class="font-thin font-opensans text-xl text-neutral-300 py-10 px-6 ">{{product.name}}</p>
                     </div>
                     <div class="absolute right-4 bottom-4 flex items-center">
                         <!-- Conditional rendering for icons based on product name -->

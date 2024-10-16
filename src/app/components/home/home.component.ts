@@ -15,12 +15,12 @@ export class HomeComponent {
   responsiveOptions = [
     {
         breakpoint: '1536px', // 2XL
-        numVisible: 3,        // Show 3 items
+        numVisible: 4,        // Show 3 items
         numScroll: 1          // Scroll 1 item at a time
     },
     {
         breakpoint: '1200px',  // XL
-        numVisible: 3,         // Show 3 items
+        numVisible: 4,         // Show 3 items
         numScroll: 1
     },
     {

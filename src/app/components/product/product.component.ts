@@ -11,5 +11,6 @@ export class ProductComponent implements OnInit {
     setTimeout(() => {
        this.data=true
     }, 1000);
+    window.scroll(0,0)
   }
 }

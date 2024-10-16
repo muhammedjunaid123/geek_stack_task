@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+        'opensans': ['Open Sans', 'sans-serif']
       },
       screens: {
         xs: "500px",
