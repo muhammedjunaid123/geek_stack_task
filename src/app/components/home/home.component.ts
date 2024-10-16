@@ -20,7 +20,7 @@ export class HomeComponent {
     },
     {
         breakpoint: '1200px',  // XL
-        numVisible: 3,         // Show 3 items
+        numVisible: 4,         // Show 3 items
         numScroll: 1
     },
     {
